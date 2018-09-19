@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Simon Dice</title>
+    <link rel="stylesheet" type="text/css" href="juego.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="header">
+      <IMG SRC="platzi.jpg" alt='PlatziMon' WIDTH=400 HEIGHT=160>
+    </div>
+    <div class="col-md-7">
+      <div class="gameboard ">
+        <div id="celeste" class="color celeste left" data-color="celeste"></div>
+        <div id="violeta" class="color violeta right" data-color="violeta"></div>
+        <div id="naranja" class="color naranja left" data-color="naranja"></div>
+        <div id="verde" class="color verde right" data-color="verde"></div>
+        <button id="btnEmpezar" class="btn-start btn btn-danger" onclick="empezarJuego()">Empezar a jugar!</button>
+      </div>
+    </div>
+    <div class="col-md-1">
+      <b>Puntaje</b>
+      <div id="timedate" class="mx-auto">
+
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="col-md-6">
+        <div class="h-100 justify-content-center align-items-center">
+          <h6 class="text-center"><b>PUNTAJES MAS ALTOS</b></h6></div>
+        <ul id="timeList" class="list-group">
+        </ul>
+      </div>
+
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="juego.js"></script>
+  </body>
+</html>
